@@ -6,7 +6,8 @@ if(theme == null){
     setTheme(theme);
 }
 let themeDot = document.getElementsByClassName('theme-dot');
-for(var i=0; themeDot.length>i; i++){
+//For Short Term use let instead var.
+for(let i=0; themeDot.length>i; i++){
     themeDot[i].addEventListener('click',function(){
         var mode = this.dataset.mode;
         // console.log('option clicked',mode);
