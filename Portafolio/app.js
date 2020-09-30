@@ -13,6 +13,7 @@ for(var i=0; themeDot.length>i; i++){
         setTheme(mode);
     })
 }
+//nothing to be done here
 function setTheme(mode){
     if(mode =='light'){
         document.getElementById('theme-style').href = 'style.css';
