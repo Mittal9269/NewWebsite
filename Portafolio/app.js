@@ -30,3 +30,4 @@ function setTheme(mode){
     }
     localStorage.setItem('theme',mode);
 }
+\\improve your design
