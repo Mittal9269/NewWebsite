@@ -1,0 +1,146 @@
+:root{
+    --mainColor:#eaeaea;
+    --secondaryColor:#fff;
+
+    --borderColor:#c1c1c1;
+
+    --mainText:black;
+    --secondaryText:#4b5156;
+
+    --themeDotBorder:#242926;
+
+    --previewBg:rgb(251,249,243,0.8);
+
+    --previewShadow:#f0ead6;
+
+    --buttonColor:black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.s1{
+    height: 1800px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.blank{
+    height: 100px;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* border: 2px solid var(--borderColor); */
+}
+.h1{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    transition: .2s;
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75); 
+}
+.h1 .sami{
+    display: flex;
+    flex-direction: row;
+}
+.h2{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    transition: .2s;
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75); 
+}
+.h2 .sami{
+    display: flex;
+    flex-direction: row;
+}
+.h1 img{
+ margin: 6px;
+ height: 100px;
+ width: 100px;
+}
+.h2 img{
+ margin: 6px;
+ height: 100px;
+ width: 100px;
+}
+.words{
+    opacity: 0;
+}
+.IMG{
+    cursor: pointer;
+}
+.h1:hover .IMG{
+    transform: scale(1.1);
+}
+.h1:hover .words{
+    opacity: 1;
+}
+.h2:hover .IMG{
+    transform: scale(1.1);
+}
+.h2:hover .words{
+    opacity: 1;
+}
+.Main{
+    text-align: center;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.h1:hover .sami{
+    flex-direction: column;
+    margin-left: 10px;
+    transition: 0s;
+}
+.h1:hover .Main{
+    opacity: 0;
+    transition: 0s;
+}
+.h2:hover .sami{
+    flex-direction: column;
+    margin-left: 10px;
+    transition: 0s;
+}
+.h2:hover .Main{
+    opacity: 0;
+    transition: 0s;
+}
+@media(max-width: 1000px){
+    .s1{
+        height: 2500px;
+    }
+    .container{
+        width: 70%;
+    }
+    .h1{
+        display: flex;
+        flex-direction: column;
+    }
+    .h2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Main{
+        display: block;
+    }
+    .words{
+        display: none;
+    }
+    .h1:hover .words{
+        display: flex;
+    }
+    .h2:hover .words{
+        display: flex;
+    }
+}
